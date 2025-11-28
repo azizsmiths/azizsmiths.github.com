@@ -1487,7 +1487,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+<!-- Hero Section -->
 <section id="home" class="hero">
     <div class="hero-content">
 
@@ -1504,31 +1504,36 @@
         <p class="hero-description"></p>
 
         <!-- CTA + Logo Row -->
-        <div class="cta-buttons" style="display: flex; align-items: center; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+        <div class="cta-buttons" style="display: flex; align-items: center; gap: 1rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap;">
 
             <!-- Get In Touch Button -->
-            <a href="#contact" class="btn btn-primary" style="display: flex; align-items: center; gap: 0.4rem;">
+            <a href="#contact" class="btn btn-primary" 
+               style="display: flex; align-items: center; gap: 0.4rem; padding: 0.9rem 2rem; height: 48px;">
                 <i class="fas fa-envelope"></i> Get In Touch
             </a>
 
-            <!-- Clickable Smiths Detection Logo -->
-            <a href="https://www.smithsdetection.com" target="_blank">
-                <img src="assets/smiths-detection-logo.png" 
-                     alt="Smiths Detection Logo"
-                     style="
-                        width: 48px;
-                        height: 48px;
-                        object-fit: contain;
-                        background: rgba(255,255,255,0.08);
-                        padding: 6px;
-                        border-radius: 8px;
-                        border: 1px solid var(--border-color);
-                     ">
+            <!-- Clickable Smiths Detection Logo (same size box as button) -->
+            <a href="https://www.smithsdetection.com" target="_blank" style="display: flex; align-items: center;">
+                <div style="
+                    height: 48px;
+                    width: 160px;                /* same width as the Get In Touch button */
+                    background: rgba(255,255,255,0.08);
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                ">
+                    <img src="assets/smiths-detection-logo.png" 
+                         alt="Smiths Detection Logo"
+                         style="height: 60%; width: auto; object-fit: contain;">
+                </div>
             </a>
 
         </div>
     </div>
 </section>
+
 
 
    <!-- About Section -->
