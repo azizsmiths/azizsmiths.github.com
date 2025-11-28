@@ -1507,52 +1507,44 @@
         <div class="cta-buttons"
              style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-top: 1.5rem;">
 
-            <!-- Smiths Detection Logo (now on top + full width on mobile) -->
-            <a href="https://www.smithsdetection.com" target="_blank" style="width: 100%; max-width: 320px;">
+            <!-- Smiths Detection Logo (natural size, no blank space) -->
+            <a href="https://www.smithsdetection.com" target="_blank"
+               style="display: inline-flex; align-items: center; justify-content: center;">
                 <div style="
-                    height: 48px;
-                    width: 100%;
-                    background: rgba(255,255,255,0.08);
-                    border: 1px solid var(--border-color);
-                    border-radius: 8px;
-                    display: flex;
+                    display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                ">
+                    padding: 6px 10px;
+                    background: rgba(255,255,255,0.08);
+                    border: 1px solid var(--border-color);
+                    border-radius: 12px;
+                    ">
                     <img src="assets/smiths-detection-logo.png"
                          alt="Smiths Detection Logo"
-                         style="height: 65%; width: auto; object-fit: contain;">
+                         style="height: auto; width: 100%; max-width: 230px; object-fit: contain;">
                 </div>
             </a>
 
-            <!-- Get In Touch Button (now below + full width on mobile) -->
+            <!-- Get In Touch Button -->
             <a href="#contact" class="btn btn-primary"
-               style="height: 48px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 320px;">
+               style="height: 48px; display: flex; justify-content: center; align-items: center; padding: 0 2rem;">
                 <i class="fas fa-envelope"></i>&nbsp; Get In Touch
             </a>
-
         </div>
+
     </div>
 </section>
 
-<!-- Desktop layout fix -->
+
+<!-- Desktop layout -->
 <style>
 @media (min-width: 768px) {
     .cta-buttons {
         flex-direction: row !important;
         justify-content: center !important;
-        gap: 1rem !important;
-    }
-
-    .cta-buttons a {
-        width: auto !important;
-        max-width: none !important;
     }
 }
 </style>
-
-
-
 
    <!-- About Section -->
 <section id="about" class="section">
